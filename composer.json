@@ -17,5 +17,7 @@
   "autoload": {
     "psr-4": { "Ambient\\Payfort\\": "" },
     "files": [ "registration.php" ]
-  }
+  },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
