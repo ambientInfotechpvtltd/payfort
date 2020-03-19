@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Ambient_Payfort default configuration
+*
+* @category    Ambient
+* @package     Ambient_Payfort
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <ambient_payfort>
+                <model>Ambient\Payfort\Model\Payment</model>
+                <sha_type>SHA-128</sha_type>
+                <language>store</language>
+                <payment_action>sale</payment_action>
+                <allowspecific>0</allowspecific>
+                <min_order_total>0</min_order_total>
+                <order_status>ambient_payfort_new</order_status>
+                <order_status_on_fail>ambient_payfort_failed</order_status_on_fail>
+                <gateway_currency>base</gateway_currency>
+                <group>ambient_payfort</group>
+            </ambient_payfort>
+            <ambient_payfort_cc>
+                <model>Ambient\Payfort\Model\Method\Cc</model>
+                <active>0</active>
+                <title>Credit / Debit Card</title>
+                <integration_type>redirection</integration_type>
+                <order_status>ambient_payfort_new</order_status>
+                <group>ambient_payfort</group>
+            </ambient_payfort_cc>
+            <ambient_payfort_installments>
+                <model>Ambient\Payfort\Model\Method\Installments</model>
+                <active>0</active>
+                <title>Installments</title>
+                <order_status>ambient_payfort_new</order_status>
+                <group>ambient_payfort</group>
+            </ambient_payfort_installments>
+            <ambient_payfort_sadad>
+                <model>Ambient\Payfort\Model\Method\Sadad</model>
+                <active>0</active>
+                <title>SADAD</title>
+                <order_status>ambient_payfort_new</order_status>
+                <group>ambient_payfort</group>
+            </ambient_payfort_sadad>
+            <ambient_payfort_naps>
+                <model>Ambient\Payfort\Model\Method\Naps</model>
+                <active>0</active>
+                <title>NAPS</title>
+                <order_status>ambient_payfort_new</order_status>
+                <group>ambient_payfort</group>
+            </ambient_payfort_naps>
+        </payment>
+    </default>
+</config>

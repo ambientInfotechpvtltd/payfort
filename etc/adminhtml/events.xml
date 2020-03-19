@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Ambient_Payfort default configuration
+*
+* @category    Ambient
+* @package     Ambient_Payfort
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="admin_system_config_changed_section_payment">
+        <observer name="ambient_payfort_admin_system_config_changed_section_payment" instance="Ambient\Payfort\Observer\AdminSystemConfigChangedPaymentObserver"/>
+    </event>
+</config>

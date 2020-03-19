@@ -1,0 +1,21 @@
+{
+  "name": "ambientinfotechpvtltd/payfort",
+  "description": "Use Ambient Payfort module to have access to Payfort payment methods.",
+  "type": "magento2-module",
+  "version": "1.4.1",
+  "license": [
+    "MIT"
+  ],
+  "extra": {
+    "map": [
+      [
+        "*",
+        "Ambient/Payfort"
+      ]
+    ]
+  },
+  "autoload": {
+    "psr-4": { "Ambient\\Payfort\\": "" },
+    "files": [ "registration.php" ]
+  }
+}

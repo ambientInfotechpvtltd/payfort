@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Ambient_Payfort default payment configuration
+*
+* @category    Ambient
+* @package     Ambient_Payfort
+*/
+-->
+<payment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Payment:etc/payment.xsd">
+    <groups>
+        <group id="ambient_payfort">
+            <label>AMBIENT Payment Methods</label>
+        </group>
+    </groups>
+    <methods>
+        <method name="ambient_payfort_cc">
+            <allow_multiple_address>0</allow_multiple_address>
+        </method>
+        <method name="ambient_payfort_installments">
+            <allow_multiple_address>0</allow_multiple_address>
+        </method>
+        <method name="ambient_payfort_sadad">
+            <allow_multiple_address>0</allow_multiple_address>
+        </method>
+        <method name="ambient_payfort_naps">
+            <allow_multiple_address>0</allow_multiple_address>
+        </method>
+    </methods>
+</payment>
